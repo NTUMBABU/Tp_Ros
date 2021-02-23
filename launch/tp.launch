@@ -1,0 +1,6 @@
+<launch>
+	<node name="toto" pkg="exercice1" type="sub.py" output="screen">
+		<remap from="subscribed_topic" to="published_topic"/>
+	</node>
+	<node name="tutu" pkg="exercice1" type="pub.py"/>
+</launch>
