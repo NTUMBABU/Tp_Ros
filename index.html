@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Titanic surviver</h1>
+<form action="{{url_for('predict')}}"method="post">
+    <input type="text" name="pclass" placeholder="pclass" required="required"/>
+    <input type="text" name="sex" placeholder="sex" required="required"/>
+    <input type="text" name="age" placeholder="age" required="required"/>
+    <button t ype="submit">Predire</button>
+</form>
+<br>
+<p>{{prediction_text}}</p>
+</body>
+</html>
